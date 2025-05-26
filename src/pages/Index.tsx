@@ -93,6 +93,36 @@ const Index = () => {
               </p>
             </div>
 
+            {/* Photo Block - Massage Hands */}
+            <div className="col-span-12 md:col-span-3 row-span-3 rounded-3xl overflow-hidden relative group">
+              <img
+                src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop&crop=hands"
+                alt="Массажные техники рук"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold">Техники рук</p>
+                  <p className="text-xs opacity-90">Правильные движения</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Photo Block - Self Massage */}
+            <div className="col-span-12 md:col-span-3 row-span-2 rounded-3xl overflow-hidden relative group">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+                alt="Самомассаж"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold">Самомассаж</p>
+                  <p className="text-xs opacity-90">Забота о себе</p>
+                </div>
+              </div>
+            </div>
+
             {/* Benefits Section */}
             <div className="col-span-12 md:col-span-6 row-span-4 bg-gradient-to-br from-yellow-100 to-amber-100 rounded-3xl p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -134,37 +164,34 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Testimonials */}
-            <div className="col-span-12 md:col-span-6 row-span-2 bg-gradient-to-br from-rose-100 to-pink-100 rounded-3xl p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 bg-rose-200 rounded-full flex items-center justify-center">
-                  <span className="text-rose-700 font-semibold">М</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-800">Мария</p>
-                  <p className="text-sm text-gray-500">Москва</p>
+            {/* Photo Block - Relaxation */}
+            <div className="col-span-12 md:col-span-4 row-span-2 rounded-3xl overflow-hidden relative group">
+              <img
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=500&h=250&fit=crop"
+                alt="Расслабление и релакс"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold">Полное расслабление</p>
+                  <p className="text-xs opacity-90">Гармония тела и души</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm italic">
-                "Замечательный курс! Научилась делать расслабляющий массаж
-                мужу."
-              </p>
             </div>
 
-            <div className="col-span-12 md:col-span-6 row-span-2 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-3xl p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-12 h-12 bg-teal-200 rounded-full flex items-center justify-center">
-                  <span className="text-teal-700 font-semibold">А</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-800">Алексей</p>
-                  <p className="text-sm text-gray-500">Санкт-Петербург</p>
+            {/* Photo Block - Massage Oils */}
+            <div className="col-span-12 md:col-span-4 row-span-2 rounded-3xl overflow-hidden relative group">
+              <img
+                src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=500&h=250&fit=crop"
+                alt="Масла для массажа"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold">Ароматные масла</p>
+                  <p className="text-xs opacity-90">Для лучшего эффекта</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm italic">
-                "Курс превзошел ожидания. Теперь могу помочь себе снять
-                напряжение."
-              </p>
             </div>
 
             {/* CTA Section */}
