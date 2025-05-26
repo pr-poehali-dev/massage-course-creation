@@ -10,239 +10,221 @@ import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-violet-50 to-white">
-      {/* Hero Section */}
-      <section className="relative px-6 py-16 text-center">
-        <div className="max-w-4xl mx-auto">
-          <Badge
-            variant="secondary"
-            className="mb-6 bg-violet-100 text-violet-700"
-          >
-            Домашний курс массажа
-          </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Курс массажа
-            <br />
-            <span className="text-violet-600">«Проснись»</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Мягкий домашний курс от Аргишта Мамреяна. Научитесь делать
-            расслабляющий массаж для себя и близких в уютной домашней обстановке
-          </p>
-          <Button
-            size="lg"
-            className="bg-violet-600 hover:bg-violet-700 text-white px-8 py-4 text-lg"
-          >
-            Начать обучение 🌟
-          </Button>
-        </div>
-      </section>
-
-      {/* About Course */}
-      <section className="px-6 py-16 bg-gradient-to-r from-green-50 to-blue-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            О курсе
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg bg-white/80 backdrop-blur">
-              <CardHeader>
-                <CardTitle className="text-violet-600">
-                  🏠 Домашний формат
-                </CardTitle>
-                <CardDescription>
-                  Изучайте в комфортной домашней обстановке в удобном для вас
-                  темпе
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="border-none shadow-lg bg-white/80 backdrop-blur">
-              <CardHeader>
-                <CardTitle className="text-violet-600">
-                  💆‍♀️ Мягкие техники
-                </CardTitle>
-                <CardDescription>
-                  Безопасные и эффективные техники массажа для расслабления и
-                  восстановления
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="border-none shadow-lg bg-white/80 backdrop-blur">
-              <CardHeader>
-                <CardTitle className="text-violet-600">
-                  👨‍🏫 Опытный наставник
-                </CardTitle>
-                <CardDescription>
-                  Аргишт Мамреян — практикующий массажист с многолетним опытом
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits */}
-      <section className="px-6 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">
-            Что вы получите
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-left">
-              <h3 className="text-2xl font-semibold text-violet-600 mb-4">
-                🎥 Видео-уроки
-              </h3>
-              <p className="text-gray-600">
-                Подробные видео с демонстрацией всех техник массажа
-              </p>
-            </div>
-            <div className="text-left">
-              <h3 className="text-2xl font-semibold text-violet-600 mb-4">
-                📋 Методички
-              </h3>
-              <p className="text-gray-600">
-                Практические руководства и схемы массажных движений
-              </p>
-            </div>
-            <div className="text-left">
-              <h3 className="text-2xl font-semibold text-violet-600 mb-4">
-                💬 Поддержка
-              </h3>
-              <p className="text-gray-600">
-                Персональная поддержка и ответы на вопросы
-              </p>
-            </div>
-            <div className="text-left">
-              <h3 className="text-2xl font-semibold text-violet-600 mb-4">
-                🏆 Сертификат
-              </h3>
-              <p className="text-gray-600">Сертификат о прохождении курса</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="px-6 py-16 bg-peach-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            Отзывы студентов
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6">
-                <p className="text-gray-600 mb-4 italic">
-                  "Замечательный курс! Научилась делать расслабляющий массаж
-                  мужу. Очень понятные объяснения и мягкий подход."
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+      {/* Hero Section - Large Bento Box */}
+      <section className="p-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-12 gap-4 auto-rows-[120px]">
+            {/* Main Hero - Large Box */}
+            <div className="col-span-12 md:col-span-8 row-span-4 bg-gradient-to-br from-amber-100 to-orange-100 rounded-3xl p-8 relative overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <Badge className="bg-amber-200 text-amber-800 border-none">
+                  Домашний курс массажа
+                </Badge>
+              </div>
+              <div className="h-full flex flex-col justify-center">
+                <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4 leading-tight">
+                  Курс массажа
+                  <br />
+                  <span className="text-amber-700">«Проснись»</span>
+                </h1>
+                <p className="text-lg text-gray-600 mb-6 max-w-md">
+                  Мягкий домашний курс от Аргишта Мамреяна. Научитесь делать
+                  расслабляющий массаж для себя и близких
                 </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-violet-100 rounded-full flex items-center justify-center mr-3">
-                    <span className="text-violet-600 font-semibold">М</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold">Мария</p>
-                    <p className="text-sm text-gray-500">Москва</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6">
-                <p className="text-gray-600 mb-4 italic">
-                  "Курс превзошел ожидания. Теперь могу помочь себе снять
-                  напряжение после работы. Спасибо Аргишту!"
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-violet-100 rounded-full flex items-center justify-center mr-3">
-                    <span className="text-violet-600 font-semibold">А</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold">Алексей</p>
-                    <p className="text-sm text-gray-500">Санкт-Петербург</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+                <Button
+                  size="lg"
+                  className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 w-fit"
+                >
+                  Начать обучение 🌟
+                </Button>
+              </div>
+            </div>
 
-      {/* Pricing */}
-      <section className="px-6 py-16">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
-            Начните обучение сегодня
-          </h2>
-          <Card className="border-2 border-violet-200 shadow-xl">
-            <CardHeader>
-              <Badge
-                variant="secondary"
-                className="mx-auto mb-4 bg-violet-100 text-violet-700"
-              >
-                Специальная цена
+            {/* Stats Box */}
+            <div className="col-span-12 md:col-span-4 row-span-2 bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl p-6">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">12</h3>
+              <p className="text-gray-600">видео-уроков</p>
+              <div className="mt-4">
+                <div className="text-lg font-semibold text-orange-700">
+                  6 месяцев
+                </div>
+                <p className="text-sm text-gray-600">доступа к курсу</p>
+              </div>
+            </div>
+
+            {/* Price Box */}
+            <div className="col-span-12 md:col-span-4 row-span-2 bg-gradient-to-br from-red-100 to-pink-100 rounded-3xl p-6 text-center">
+              <div className="line-through text-gray-400 text-lg">9 990 ₽</div>
+              <div className="text-3xl font-bold text-red-700">4 990 ₽</div>
+              <Badge className="bg-red-200 text-red-800 border-none mt-2">
+                -50%
               </Badge>
-              <CardTitle className="text-3xl text-violet-600">
-                4 990 ₽
-              </CardTitle>
-              <CardDescription className="text-lg">
-                <span className="line-through text-gray-400">9 990 ₽</span> —
-                скидка 50%
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <ul className="text-left space-y-2 text-gray-600">
-                <li>✓ 12 видео-уроков</li>
-                <li>✓ Практические методички</li>
-                <li>✓ Поддержка наставника</li>
-                <li>✓ Сертификат о прохождении</li>
-                <li>✓ Доступ на 6 месяцев</li>
-              </ul>
-              <Button
-                size="lg"
-                className="w-full bg-violet-600 hover:bg-violet-700 text-white py-4"
-              >
-                Купить курс за 4 990 ₽ 💳
-              </Button>
-              <p className="text-sm text-gray-500">
+            </div>
+
+            {/* Format Cards */}
+            <div className="col-span-12 md:col-span-4 row-span-3 bg-gradient-to-br from-green-100 to-teal-100 rounded-3xl p-6">
+              <div className="text-3xl mb-3">🏠</div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">
+                Домашний формат
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Изучайте в комфортной обстановке в удобном темпе
+              </p>
+            </div>
+
+            <div className="col-span-12 md:col-span-4 row-span-3 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl p-6">
+              <div className="text-3xl mb-3">💆‍♀️</div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">
+                Мягкие техники
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Безопасные и эффективные техники для расслабления
+              </p>
+            </div>
+
+            <div className="col-span-12 md:col-span-4 row-span-3 bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-6">
+              <div className="text-3xl mb-3">👨‍🏫</div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">
+                Опытный наставник
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Аргишт Мамреян — массажист с многолетним опытом
+              </p>
+            </div>
+
+            {/* Benefits Section */}
+            <div className="col-span-12 md:col-span-6 row-span-4 bg-gradient-to-br from-yellow-100 to-amber-100 rounded-3xl p-8">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Что вы получите
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-xl">🎥</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Видео-уроки</h4>
+                    <p className="text-sm text-gray-600">
+                      Подробные демонстрации техник
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-xl">📋</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Методички</h4>
+                    <p className="text-sm text-gray-600">
+                      Схемы массажных движений
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-xl">💬</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Поддержка</h4>
+                    <p className="text-sm text-gray-600">Ответы на вопросы</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-xl">🏆</span>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Сертификат</h4>
+                    <p className="text-sm text-gray-600">О прохождении курса</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonials */}
+            <div className="col-span-12 md:col-span-6 row-span-2 bg-gradient-to-br from-rose-100 to-pink-100 rounded-3xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 bg-rose-200 rounded-full flex items-center justify-center">
+                  <span className="text-rose-700 font-semibold">М</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-800">Мария</p>
+                  <p className="text-sm text-gray-500">Москва</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">
+                "Замечательный курс! Научилась делать расслабляющий массаж
+                мужу."
+              </p>
+            </div>
+
+            <div className="col-span-12 md:col-span-6 row-span-2 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-3xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 bg-teal-200 rounded-full flex items-center justify-center">
+                  <span className="text-teal-700 font-semibold">А</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-800">Алексей</p>
+                  <p className="text-sm text-gray-500">Санкт-Петербург</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm italic">
+                "Курс превзошел ожидания. Теперь могу помочь себе снять
+                напряжение."
+              </p>
+            </div>
+
+            {/* CTA Section */}
+            <div className="col-span-12 md:col-span-8 row-span-3 bg-gradient-to-br from-amber-200 to-orange-200 rounded-3xl p-8 flex flex-col justify-center">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                Начните обучение сегодня
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Специальная цена действует ограниченное время
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  className="bg-amber-600 hover:bg-amber-700 text-white"
+                >
+                  Купить курс за 4 990 ₽ 💳
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-amber-300 text-amber-700 hover:bg-amber-100"
+                >
+                  Задать вопрос 📱
+                </Button>
+              </div>
+              <p className="text-sm text-gray-500 mt-4">
                 Безопасная оплата • Гарантия возврата 14 дней
               </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            </div>
 
-      {/* Contact */}
-      <section className="px-6 py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Остались вопросы?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Свяжитесь с нами и мы поможем выбрать подходящий формат обучения
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-violet-200 text-violet-600 hover:bg-violet-50"
-            >
-              📧 Написать на почту
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-violet-200 text-violet-600 hover:bg-violet-50"
-            >
-              📱 Telegram
-            </Button>
+            {/* Contact Info */}
+            <div className="col-span-12 md:col-span-4 row-span-3 bg-gradient-to-br from-stone-100 to-neutral-100 rounded-3xl p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Контакты</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span>📧</span>
+                  <span className="text-sm text-gray-600">
+                    info@massage-course.ru
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>📱</span>
+                  <span className="text-sm text-gray-600">Telegram</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>⏰</span>
+                  <span className="text-sm text-gray-600">
+                    Поддержка 9:00-21:00
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 bg-gray-900 text-white text-center">
+      <footer className="px-6 py-8 bg-stone-800 text-white text-center">
         <p>© 2024 Курс массажа «Проснись» • Аргишт Мамреян</p>
-        <p className="text-gray-400 text-sm mt-2">
+        <p className="text-stone-400 text-sm mt-2">
           Забота о здоровье начинается с знаний
         </p>
       </footer>
